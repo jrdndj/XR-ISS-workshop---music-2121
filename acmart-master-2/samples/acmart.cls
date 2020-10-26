@@ -1184,7 +1184,7 @@ Computing Machinery]
   \global\@ACM@journal@bibstripfalse
 }
 \if@ACM@journal\else
-\acmConference[Information Society 2020]{IS 2020}{5–9 October, 2020}{Ljubljana, Slovenia}%
+\acmConference[XR Interaction 2020]{Cross-Reality (XR) Interaction @ ACM ISS 2020}{8 November 2020}{Lisbon, Portugal}%
   % Information Society 2020, 5–9 October, 2020, Ljubljana, Slovenia 
 \fi
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
@@ -1553,8 +1553,7 @@ Computing Machinery]
    are not made or distributed for profit or commercial advantage and that 
    copies bear this notice and the full citation on the first page. Copyrights 
    for third-party components of this work must be honored. For all other uses, 
-   contact the owner/author(s).
-   %\copyright 2020 Copyright held by the owner/author(s).
+   contact the owner/author(s). %\copyright 2020 Copyright held by the owner/author(s).
   \or % acmlicensed
    Permission to make digital or hard copies of all or part of this
    work for personal or classroom use is granted without fee provided
@@ -1726,7 +1725,7 @@ Computing Machinery]
     \fi
     \if@ACM@manuscript\else
        \if@ACM@journal@bibstrip\else % Print the conference information
-         {\itshape \acmConference@shortname, \acmConference@date, \acmConference@venue}\par
+         {\itshape \acmConference@name, \acmConference@date, \acmConference@venue}\par
        \fi
     \fi
     \if@printcopyright
