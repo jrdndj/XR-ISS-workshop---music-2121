@@ -1184,10 +1184,11 @@ Computing Machinery]
   \global\@ACM@journal@bibstripfalse
 }
 \if@ACM@journal\else
-\acmConference[HCI-IS 2020]{Human Computer Interaction in Information Society 2020}{October 2020}{Ljubljana, Slovenia}%
+% CHANGED MATJAZ
+\acmConference[International Workshop on XR Interaction 2020]{Cross-Reality (XR) Interaction, ACM ISS 2020}{November 8 2020}{Lisbon, Portugal}%
 \fi
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
-\acmBooktitle{Proceedings of \acmConference@name
+\acmBooktitle{\acmConference@name
        \ifx\acmConference@name\acmConference@shortname\else
          \ (\acmConference@shortname)\fi}
 \def\@editorsAbbrev{(Ed.)}
@@ -1321,7 +1322,7 @@ Computing Machinery]
 \def\acmArticleSeq#1{\def\@acmArticleSeq{#1}}
 \acmArticleSeq{\@acmArticle}
 \def\acmYear#1{\def\@acmYear{#1}}
-\acmYear{\the\year}
+\acmYear{2020}
 \def\acmMonth#1{\def\@acmMonth{#1}}
 \acmMonth{\the\month}
 \def\@acmPubDate{\ifcase\@acmMonth\or
@@ -1329,13 +1330,13 @@ Computing Machinery]
   July\or August\or September\or October\or November\or
   December\fi~\@acmYear}
 \def\acmPrice#1{\def\@acmPrice{#1}}
-\acmPrice{15.00}
+\acmPrice{}
 \def\acmSubmissionID#1{\def\@acmSubmissionID{#1}}
 \acmSubmissionID{}
 \def\acmISBN#1{\def\@acmISBN{#1}}
-\acmISBN{978-x-xxxx-xxxx-x/YY/MM}
+\acmISBN{}
 \def\acmDOI#1{\def\@acmDOI{#1}}
-\acmDOI{10.1145/nnnnnnn.nnnnnnn}
+\acmDOI{}
 \newif\if@ACM@badge
 \@ACM@badgefalse
 \newlength\@ACM@badge@width
@@ -1509,7 +1510,7 @@ Computing Machinery]
 \def\@copyrightowner{%
   \ifcase\acm@copyrightmode\relax % none
   \or % acmcopyright
-  Association for Computing Machinery.
+  2020 Copyright held by the owner/author(s).
   \or % acmlicensed
   Copyright held by the owner/author(s). Publication rights licensed to
   ACM\@.
@@ -1547,16 +1548,12 @@ Computing Machinery]
 \def\@copyrightpermission{%
   \ifcase\acm@copyrightmode\relax % none
   \or % acmcopyright
-   Permission to make digital or hard copies of all or part of this
-   work for personal or classroom use is granted without fee provided
-   that copies are not made or distributed for profit or commercial
-   advantage and that copies bear this notice and the full citation on
-   the first page. Copyrights for components of this work owned by
-   others than ACM must be honored. Abstracting with credit is
-   permitted. To copy otherwise, or republish, to post on servers or to
-   redistribute to lists, requires prior specific permission
-   and\hspace*{.5pt}/or  a fee. Request permissions from
-   permissions@acm.org.
+   Permission to make digital or hard copies of part or all of this work for 
+   personal or classroom use is granted without fee provided that copies 
+   are not made or distributed for profit or commercial advantage and that 
+   copies bear this notice and the full citation on the first page. Copyrights 
+   for third-party components of this work must be honored. For all other uses, 
+   contact the owner/author(s). %\copyright 2020 Copyright held by the owner/author(s).
   \or % acmlicensed
    Permission to make digital or hard copies of all or part of this
    work for personal or classroom use is granted without fee provided
@@ -1728,7 +1725,9 @@ Computing Machinery]
     \fi
     \if@ACM@manuscript\else
        \if@ACM@journal@bibstrip\else % Print the conference information
-         {\itshape \acmConference@shortname, \acmConference@date, \acmConference@venue}\par
+        % CHANGED MATJAZ
+        % {\itshape \acmConference@shortname, \acmConference@date, \acmConference@venue}\par
+         {\itshape \acmConference@name, \acmConference@date, \acmConference@venue}\par
        \fi
     \fi
     \if@printcopyright
