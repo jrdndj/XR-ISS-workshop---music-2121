@@ -1184,11 +1184,11 @@ Computing Machinery]
   \global\@ACM@journal@bibstripfalse
 }
 \if@ACM@journal\else
-\acmConference[XR Interaction 2020]{Cross-Reality (XR) Interaction @ ACM ISS 2020}{8 November 2020}{Lisbon, Portugal}%
-  % Information Society 2020, 5–9 October, 2020, Ljubljana, Slovenia 
+% CHANGED MATJAZ
+\acmConference[International Workshop on XR Interaction 2020]{Cross-Reality (XR) Interaction, ACM ISS 2020}{November 8 2020}{Lisbon, Portugal}%
 \fi
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
-\acmBooktitle{Proceedings of \acmConference@name
+\acmBooktitle{\acmConference@name
        \ifx\acmConference@name\acmConference@shortname\else
          \ (\acmConference@shortname)\fi}
 \def\@editorsAbbrev{(Ed.)}
@@ -1322,7 +1322,7 @@ Computing Machinery]
 \def\acmArticleSeq#1{\def\@acmArticleSeq{#1}}
 \acmArticleSeq{\@acmArticle}
 \def\acmYear#1{\def\@acmYear{#1}}
-\acmYear{}
+\acmYear{2020}
 \def\acmMonth#1{\def\@acmMonth{#1}}
 \acmMonth{\the\month}
 \def\@acmPubDate{\ifcase\@acmMonth\or
@@ -1725,6 +1725,8 @@ Computing Machinery]
     \fi
     \if@ACM@manuscript\else
        \if@ACM@journal@bibstrip\else % Print the conference information
+        % CHANGED MATJAZ
+        % {\itshape \acmConference@shortname, \acmConference@date, \acmConference@venue}\par
          {\itshape \acmConference@name, \acmConference@date, \acmConference@venue}\par
        \fi
     \fi

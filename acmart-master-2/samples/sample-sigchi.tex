@@ -80,7 +80,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Sound 2121: Cross-reality Transitions Between the Real and Augmented Sound Landscape}
+\title[Sound 2121: Cross-Reality Sound Transitions]{Sound 2121: Cross-Reality Transitions Between Real and Augmented Sound Landscapes}
 
 
 %switching between music listening and the environment sounds}
@@ -149,10 +149,12 @@
   \postcode{SI-8000}
 }
 
+\renewcommand{\shortauthors}{J. A. Deja, N. T. Attygale, K. Čopič Pucihar, M. Kljun}
+
 \settopmatter{printacmref=false}
 
 \begin{abstract}
-Music and sounds have always been an integral part of our society since the prehistoric times. However, music listening has moved from a social experience to a more personal one with audio systems such as speakers moving ever closer to our ear canal. Based on this pattern and various futuristic visions of how we are going to listen to music, one can start to imagine a situation where a chip in our auditory cortex will stream sounds directly to our brain. However, augmenting our hearing with objects around us capable of streaming sounds directly to our brains might exacerbate the already present problem of blocking the environment sounds and not paying attention to what is happening around us. In this positional paper we discuss not only about ``What is the future of music listening and how will we consume music a hundred years from now?'' but also ``How are we going to enable users to pay attention to their environment and enjoy music listening at the same time'? Put differently, how are we enabling users to constantly switch between the real and augmented sound landscapes and enable seamless cross-reality transitions as well as preserve a positive user experience. 
+Music and sounds have always been an integral part of our society since the prehistoric times. However, music listening has moved from a social experience to a more personal one with audio systems such as speakers moving ever closer to our ear canal. Based on this pattern and various futuristic visions of how we are going to listen to music, one can start to imagine a situation where a chip in our auditory cortex will stream sounds directly to our brain. However, augmenting our hearing with objects around us capable of streaming sounds directly to our brains might exacerbate the already present problem of blocking the environment sounds and not paying attention to what is happening around us. In this positional paper we discuss not only ``What is the future of music listening and how will we consume music a hundred years from now?'' but also ``How are we going to enable users to pay attention to their environment and enjoy music listening at the same time?'' Put differently, how are we enabling users to constantly switch between the real and augmented sound landscapes and enable seamless cross-reality transitions as well as preserve a positive user experience. 
 \end{abstract}
 
 %%
@@ -173,7 +175,7 @@ Music and sounds have always been an integral part of our society since the preh
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{music, interface, interaction design, sound, future}
+\keywords{music listening, brain-chip interface, sound streaming, future vision}
 
 %% A "teaser" image appears between the author and affiliation
 %% information and the body of the document, and typically spans the
@@ -190,12 +192,14 @@ Music and sounds have always been an integral part of our society since the preh
 \maketitle
 
 \section{Background}
-Cross-Reality (XR) Interaction\footnote{https://xr.famnit.upr.si} considers the shift between multiple systems in the reality-virtuality continuum. It also considers the concurrent usage in between these systems that may or may not entirely diminish the distinction of both Augmented Reality (AR) and Virtual Reality (VR). In this position paper, we present a music interface, envisioning a future that allows interaction between multiple realities. Our position diverts from the typical Visual Augmented and Virtual Reality but rather focuses on the problems of sound and how humans transition between realities with the help of sound. We intend to share a perspective that may consider also the transitions induced by visual elements and augmentations as they are consumed with sound. This paper encourages several questions that involve retaining user attention, task-awareness and even social communication. 
+One area of Cross-Reality (XR) Interaction %\footnote{https://xr.famnit.upr.si} 
+explores the shift between multiple systems on the Milgram's reality-virtuality continuum. % or the concurrent usage in between these systems that may or may not entirely diminish the distinction of both Augmented Reality (AR) and Virtual Reality (VR). 
+In this position paper, we envision a future with a chip-to-brain sound transmitting interface that allows interaction between and mixing of multiple sound realities and virtualities from the environment sound to music listening. Our position diverts from the typical visual augmented and virtual reality but rather focuses on the problems of sound and how humans transition between different sound sources. We intend to share a perspective that may consider also the transitions induced by visual elements, augmentations and virtual worlds as they are consumed with sound. This paper also encourages several questions such as how to retain users' attention, task-awareness and even social communication while interacting with the environmental sound as well as streamed one (be it from digital objects in the environment or unrelated to the environment such as listening to music). 
 \section{Music listening throughout history}
 
 Music is considered to be culturally universal \cite{campbell1997music, seeger1971reflections} and present across all parts of the globe, reshaping the ways human live, express themselves and convey emotions \cite{juslin2001music,montagu2017music}. It is believed that music originated from naturally occurring sounds and rhythms that humans echoed by merging them in patterns, making repetitions while changing tonality using their voice\cite{montagu2017music, morley2013prehistory}, hands clapping \cite{kassler1987dancing}, and smacking stones, sticks and other objects around them \cite{montagu2014horns}. Music has also helped humans in terms of survival, forging a sense of group identity and mutual trust \cite{conard2009new}. 
 
-We create and consume music for various purposes, such as for: (i) dancing as a social exercise, (ii) providing a common form of personal or community entertainment, (iii) communicating ideas and emotions and (iv) having and celebrating rituals and other activities \cite{montagu2017music}. While these purposes come in handy for a variety of music activities, this positional paper is focusing on music listening only, which is present in (i) where listening is a shared experience, and in (ii) and (iv) where listening can be a shared as well as a personal experience. 
+We create and consume music for various purposes including: (i) dancing as a social exercise, (ii) providing a common form of personal or community entertainment, (iii) communicating ideas and emotions and (iv) having and celebrating rituals and other activities \cite{montagu2017music}. While these purposes come in handy for a variety of music activities, this positional paper is focusing on music listening only, which is present in (i) where listening is a shared experience, and in (ii) and (iv) where listening can be a shared as well as a personal experience. 
 
 In the past, human tribes gathered around fires where one or several members of the group performed a music piece singing and playing instruments. This type of ``community entertainment'' or ``celebrations'' has been present for a long period of time and even nowadays people gather in live concerts, events and rituals to collectively listen to music. With recordings and radio, music has moved to people's homes and the collective listening has been reduced to family members, friends or an individual (we do not count all the radio audience towards this group since listeners are not co-present~\cite{bonini2014new}). Nevertheless, the sounds were still coming from the speaker(s) in our environment and listening to the radio was often a social event. The headphones enabled users to experience music individually and the Walkman enabled us to do it on-the-go. Smartphones and internet have expanded the instant availability of music but the consumption remained mainly personal. Looking at how listening to music has moved closer and closer to our ear canal with in-ear headphones, it is not far-fetched if we envision that listening to music will move inside our heads.
 
@@ -213,21 +217,33 @@ Having a chip in our brain seems like a far fetched idea but several researchers
 
 The vision of ``the always on'' streaming music (and other sounds) to our brain via a chip on the biological and psychological level adapting based on our mood on the fly is not new. Such neurological interface instead of a visual or voice one has been envisioned before~\cite{cherie2019bravenewworld}. With researchers and futurists working on biometric recommendation systems~\cite{zhang2018system} we could potentially achieve this in the near future. At the moment, the company called Weav\footnote{https://www.weav.io/} is already adapting music rhythm to the heartbeat ``augmenting and intensifying the listening experience at all levels''. 
 
-This envisioned streaming interface will be supported by the internet of things (IoT) vision with biological and artificial objects around us connected \cite{weisman2004internet} and having access to a superb computing power. These devices will not only be able to stream music, but also produce their own sounds or augment the existing ones.  
+This envisioned streaming interface will be supported by the internet of things (IoT) vision with biological and artificial objects around us connected \cite{weisman2004internet} and having access to a superb computing power. These devices will not only be able to stream music, but also produce their own sounds, melodies, and rhythms or augment the existing ones. Besides physical objects in the physical environment, there might be a plethora of virtual objects around us as well that will communicate with us not only visually but also vocally.
 
-Despite all these visions and developments, we still have not solved the issues related to current music consumption over the headphones. One of such issues is enabling users to hear sounds from the environment while still enjoying their music. 
+Despite all these visions and developments, we still have not solved the issues related to current music consumption over the headphones. One of such issues is enabling users to hear sounds from the environment (be it from physical or virtual objects and environments) while still enjoying their music. 
 
 \section{Switching between the environment sound to augmented streamed one}
 
 Today's headphones are complex small devices that are capable of actively and passively cancelling environment noise in order to enable users to be uninterrupted while listening to the their favourite tunes. In-ear buds even mechanically block outer sounds from entering the auditory canal. While these might be desirable features on some occasions they are also problematic since the sounds from the environment provide a cue of what is happening around us and humans always relied on these sounds in order to survive. The sounds of objects around us are even nowadays so important for our safety that legislators made it obligatory for electric cars to make artificial engine noise~\cite{guy2019carnoise}. Even some electric go-karts have introduced gas engine noise to make the experience more immersive and believable. However, seeing a cyclist, pedestrian or a car driver with the headphones is not an unusual sight and greatly affects users' situational awareness~\cite{roads2018headphonedriving}. 
 
+
 How do we then switch or transition between the envisioned future ``always on, always-adaptive'' music streaming into our auditory cortex provided by the IoT enabled devices and the environment sound in order to increase our safety or enable social interaction? 
 
-Music is also vibration; for example, it has been noted that the part of the brain responsible for hearing, works perfectly in deaf people as well \cite{abcsciencemusic}. In order to ``hear'' music, we do not need to actually hear it but rather receive the stimulus to the hearing region of the brain. This has for example been explored in bone conduction ``headphones'' conducting sound to the inner ear primarily through the bones of the skull. Some consumer products already use this technology such as Google Glass and BAE helmet. The latter for example enabled a sailing crew in the 2017 America's cup ``to keep both their ears free in order to hear external sounds, whilst providing the ability to communicate clearly with crewmates in the most treacherous of sailing conditions''~\cite{bae2019boneconhelmet}. A recent study also revealed that bone conduction headphones do not significantly affect driving performance or story comprehension and were no more distracting than regular car speakers \cite{granados2018usability}. This means that it is possible to mix the digital sound with the environment sounds. However, it remains unanswered how enjoyable is listening to music with such devices. 
+Music is also vibration; for example, it has been noted that the part of the brain responsible for hearing, works perfectly in deaf people as well \cite{abcsciencemusic}. In order to ``hear'' music, we do not need to actually hear it but rather receive the stimulus to the hearing region of the brain. This has for example been explored in bone conduction ``headphones'' conducting sound to the inner ear primarily through the bones of the skull. Some consumer products already use this technology such as Google Glass and BAE helmet. The latter for example enabled a sailing crew in the 2017 America's cup ``to keep both their ears free in order to hear external sounds, whilst providing the ability to communicate clearly with crewmates in the most treacherous of sailing conditions''~\cite{bae2019boneconhelmet}. A recent study also revealed that bone conduction headphones do not significantly affect driving performance or story comprehension and were no more distracting than regular car speakers \cite{granados2018usability}. This means that it is possible to mix digital sounds with the environment sounds. However, it remains unanswered how enjoyable is listening to music with such devices. 
 
-Based on the future IoT vision with biological and artificial objects around able to communicate with each other and us, we can envision such IoT the environment to be constantly on the guard and aware of potential risks to the people in vicinity. Thus, such environment will be able to inform us in the same way it will stream sound to us. Similar to the vision of autonomous cars communicating with each other and broadcast potential risks and road situations~\cite{shankland20195gcars}. Since music has helped humans throughout the history in terms of survival, forging a sense of group identity and mutual trust, and since environment sound landscape helped us being alert and safe we need to enable their roles in the future as well. 
+Based on the future IoT vision with biological and artificial objects around able to communicate with each other and us, we can envision such IoT the environment to be constantly on the guard and aware of potential risks to the people in vicinity. Thus, such environment will be able to inform us in the same way it will stream sounds to our brain. Similar to the vision of autonomous cars communicating with each other and broadcast potential risks and road conditions~\cite{shankland20195gcars}. 
 
-How to achieve the transition between the augmented and environment sound landscapes and vice versa to maintain enjoyable music listening user experience as well as user safety remains to be answered when such devices will be available. 
+Since music has helped humans throughout the history in terms of survival, forging a sense of group identity and mutual trust, and since environment sound landscape helped us being alert and safe we need to enable their roles in the future as well. Be it in physical environment or in any mix of reality and virtuality. At the same time we need to avoid the ``polluted'' sound landscape as in the video of the hyper-reality vision of the future~\cite{matsuda2016hyperreality} visible on Figure~\ref{fig:hyper-reality} where adverts and services seek our attention via visuals as well as sounds. And imagine receiving these through our brain-chip interface and transitioning between the reality only and hyper-reality. 
+
+\begin{figure*}[hbt!]
+  \centering
+   \includegraphics[width=\textwidth]{hyper-reality.png}
+  \caption{Hyper-reality vision of the future where physical and virtual objects emit a variety of sounds and provide a cacophony of attention seeking visual and sound elements of the environment~\cite{matsuda2016hyperreality}.}
+  \Description{Future environment with physical and virtual objects.}
+  \label{fig:hyper-reality}
+\end{figure*}
+
+How to avoid the mentioned sound ``pollution'' and achieve smooth transitions between the augmented and environment sound landscapes and vice versa to maintain enjoyable music listening user experience as well as user safety remains to be answered when such devices will be available. 
+\balance
 
 %\section{Conclusion}
 
@@ -237,6 +253,7 @@ How to achieve the transition between the augmented and environment sound landsc
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{sample-base}
+
 \end{document}
 \endinput
 %
